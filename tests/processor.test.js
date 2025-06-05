@@ -2,6 +2,7 @@ import { queueBatch, process, getBatchStatus } from '../services/processor.js'
 import { ingest } from '../controllers/ingest.js'
 import { status } from '../controllers/status.js'
 import { StatusCodes } from 'http-status-codes'
+import jest from "jest"
 
 // We will mock nanoid for consistent batch ids in tests
 jest.mock('nanoid', () => ({
