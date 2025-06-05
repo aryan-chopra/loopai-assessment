@@ -52,7 +52,7 @@ export async function process() {
             IDsTriggered.push({ value: idObject.value, batchID: idObject.batchID })
         }
 
-        await new Promise(resolve => setTimeout(resolve, 3000));
+        await new Promise(resolve => setTimeout(resolve, 5000));
 
         console.log("Completing")
         // Trigger batch completion
